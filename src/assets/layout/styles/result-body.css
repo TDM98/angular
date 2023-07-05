@@ -1,0 +1,44 @@
+.body-header {
+    color: blue;
+    text-align: center;
+}
+
+.line1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.line2 {}
+
+.line3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.line4 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.line5 {}
+
+.line6 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.description-label {
+    color:blue;
+}
+
+.description-label1 {
+    color:blue;
+    text-decoration: underline;
+}
+
+.hr-style {
+    height: 4px;
+    border-width: 0;
+    color:black;
+    background-color: black;
+}
