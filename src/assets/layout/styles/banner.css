@@ -1,9 +1,13 @@
 .title {
     color: orange;
+	font-size: 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .title1 {
     color: red;
+	font-size: 15px;
 }
 
 .header {
@@ -14,11 +18,8 @@
     position: end;
     max-width: 700px;
     border-radius: 6px;
-    padding-top: 45px;
-    margin-top: 8px;
     overflow: hidden;
-    border-color: blue;
-    background-color: antiquewhite;
+	border: 1px solid orange;
     text-align: center;
 }
 

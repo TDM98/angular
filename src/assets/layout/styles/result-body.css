@@ -37,8 +37,8 @@
 }
 
 .hr-style {
-    height: 4px;
+    height: 2px;
     border-width: 0;
     color:black;
-    background-color: black;
+    background-color: #D3D3D3;
 }

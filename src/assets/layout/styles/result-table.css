@@ -1,0 +1,19 @@
+.table-container {
+
+    position: end;
+    padding:20px;
+    overflow: hidden;
+    border: 1px solid orange;
+    background-color: white;
+    width: 50%;
+    margin:auto;
+}
+
+.table {
+
+  border: 1px solid black;
+  width: 100%;
+}
+table, th, td {
+    border:1px solid black;
+  }
