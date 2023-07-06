@@ -11,15 +11,20 @@
 
 .header {
     display: flex;
-    justify-content: space-between;
+	justify-content: space-between;
 }
 .app-header {
     position: end;
-    max-width: 700px;
+    max-width: 1000px;
     border-radius: 6px;
     overflow: hidden;
 	border: 1px solid orange;
     text-align: center;
+}
+
+.header-right {
+	display: flex;
+	flex-direction: column;
 }
 
 * {
@@ -59,7 +64,7 @@ button {
 button:before {
 	content: '';
 	position: absolute;
-	width: 150px;
+	width: 180px;
 	height: 5px;
 	transform: translateX(-3px) translateY(-5px);
 	background: rgba(255,0,0,0.0);
@@ -78,7 +83,7 @@ button:hover {
 	from { background: rgba(255,0,0,0.8);}
 	to {
 		background: rgba(255,0,0,0.8);
-		transform: translateX(-3px) translateY(38px);
+		transform: translateX(-3px) translateY(50px);
 	}
 }
 

@@ -15,6 +15,7 @@ import { Component } from "@angular/core";
       </tr>
       <tr>
         <th>Mô tả</th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
@@ -35,7 +36,6 @@ import { Component } from "@angular/core";
   </table>
   <div>
     `,
-    styles: ['main { position: end; padding:20px; overflow: hidden; border: 1px solid orange; background-color: white; width: 50%; margin:auto;}']
 })
 export class XetNghiemChiSoComponent {
 }
