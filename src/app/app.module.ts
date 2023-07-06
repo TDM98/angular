@@ -3,20 +3,45 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HelloComponent } from './hello.component';
-import { ResultComponent } from './result.component';
+import { HeaderComponent } from './header.component';
+import { DopplerComponent} from './doppler.component';
 import { TableComponent } from './table.component';
+import { FormsModule } from '@angular/forms';
+import { HomeComponent } from './home.component';
+import { SieuAm2Component } from './sieu-am-2.component';
+import { SieuAm4Component } from './sieu-am-4.component';
+import { CTComponent } from './ct.component';
+import { MRIComponent } from './mri.component';
+import { TDCNComponent } from './tham-do-chuc-nang.component';
+import { NoiSoi6Component } from './noi-soi-6-hinh.component';
+import { NoiSoi2Component } from './noi-soi-2-hinh.component';
+import { XetNghiemCDHAComponent } from './xet-nghiem-cdha.component';
+import { XetNghiemChiSoComponent } from './xet-nghiem-chi-so.component';
+
 
 @NgModule({
   declarations: [
+    HomeComponent,
     AppComponent,
-    HelloComponent,
-    ResultComponent,
+    HeaderComponent,
+    DopplerComponent,
     TableComponent,
+    SieuAm2Component,
+    SieuAm4Component,
+    CTComponent,
+    MRIComponent,
+    TDCNComponent,
+    NoiSoi6Component,
+    NoiSoi2Component,
+    XetNghiemCDHAComponent,
+    XetNghiemChiSoComponent
   ],
+
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

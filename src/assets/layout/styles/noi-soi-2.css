@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+.description-label {
+    color:blue;
+}
+
+.description-label1 {
+    color:blue;
+    text-decoration: underline;
+}
+
+.hr-style {
+    height: 2px;
+    border-width: 0;
+    color:black;
+    background-color: #D3D3D3;
+}

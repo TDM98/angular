@@ -1,8 +1,7 @@
 .title {
     color: orange;
 	font-size: 15px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	padding: 10px;
 }
 
 .title1 {
@@ -90,4 +89,69 @@ button:hover {
 
 button:focus {
 	outline: none;
+}
+.body-result {
+	margin-top: 40px;
+	margin-bottom: 50px;
+}
+.body-header {
+    color: blue;
+    text-align: center;
+	font-size: 25px;
+}
+p {
+    margin-right: 20px;
+}
+
+.line1 {
+    display: flex;
+    justify-content: space-between;
+	margin-top: 10px;
+}
+p {
+    margin-right: 50px;
+}
+
+
+.line2 {
+	margin-top: 10px;
+}
+
+.line3 {
+    display: flex;
+    justify-content: space-between;
+	margin-top: 10px;
+}
+
+.line4 {
+    display: flex;
+    justify-content: space-between;
+	margin-top: 10px;
+}
+
+.line5 {
+	margin-top: 10px;
+}
+
+.line6 {
+    display: flex;
+    justify-content: space-between;
+	margin-top: 10px;
+	font-weight: 400;
+}
+
+.description-label {
+    color:blue;
+}
+
+.description-label1 {
+    color:blue;
+    text-decoration: underline;
+}
+
+.hr-style {
+    height: 2px;
+    border-width: 0;
+    color:black;
+    background-color: black;
 }

@@ -1,12 +1,23 @@
 import { Component } from "@angular/core";
 
 @Component({
-  selector: "app-result",
+  selector: "app-header",
   template: `
-      <link rel="stylesheet" href="../assets//layout/styles/result-body.css">
-      
+      <link rel="stylesheet" href="../assets//layout/styles/header.css">
+      <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap" rel="stylesheet">
+      <div class="header">
+        <div class="app-header">
+          <h3 class="title">SỞ Y TẾ TỈNH BẠC LIÊU</h3>  
+          <h3 class="title1">BỆNH VIỆN ĐA KHOA THANH VŨ MEDIC BẠC LIÊU</h3>
+          <h3 class="title">Số 02DN, Đường Tránh Quốc Lộ 1A, Khóm 1, Phường 7, TP Bạc Liêu</h3>
+          </div>
+        <div>
+          <button class="noselect">B20003631</button>
+        </div>
+      </div>
+
       <div class="body-result">
-      <h1 class="body-header">PHIẾU KẾT QUẢ HÌNH ẢNH</h1>
+      <h2 class="body-header">PHIẾU KẾT QUẢ HÌNH ẢNH</h2>
 
       <div class ="line1">
         <p>Bệnh nhân: Nguyễn Văn A</p>
@@ -37,21 +48,7 @@ import { Component } from "@angular/core";
       </div>
       </div>
       <hr class="hr-style">
-      <div class="body-description">
-        <h2 class="description-label1">Mô tả</h2>
-        <h2 class="description-label">MÔ TẢ</h2>
-        <p>+ VÙNG TỔN THƯƠNG</p>
-        <p>* Không tổn thương khu trú</p>
-        <p>* Không tổn thương khu trú</p>
-        <p>* Không tổn thương khu trú</p>
-        <p>* Không tổn thương khu trú</p>
-        <p>* Không tổn thương khu trú</p>
-        <p>* Không tổn thương khu trú</p>
-        <p>* Không tổn thương khu trú</p>
-        <h2 class="description-label1">KẾT LUẬN</h2>
-        <p>HIỆN TẠI SIÊU ÂM DOPPLER MÀU PHÂN MÊM VÙNG: CHƯA PHÁT HIỆN BẤT THƯỜNG</p>
-      </div>
     `,
 })
-export class ResultComponent {
+export class HeaderComponent {
 }

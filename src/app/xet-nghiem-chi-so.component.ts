@@ -1,10 +1,12 @@
 import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-table',
+  selector: "app-xet-nghiem-chi-so",
   template: `
-    <link rel="stylesheet" href="../assets//layout/styles/result-table.css">
-    <div class="table-container">
+      <div class="main">
+      <app-header></app-header>
+      <link rel="stylesheet" href="../assets//layout/styles/xet-nghiem-chi-so-table.css">
+      <div class="table-container">
     <table class="table" border="1" style="border-collapse: collapse;">
     <thead>
       <tr>
@@ -32,9 +34,8 @@ import { Component } from "@angular/core";
     </tbody>
   </table>
   <div>
-    <p>test</p>
-  </div>
-  </div>
-    `
+    `,
+    styles: ['main { position: end; padding:20px; overflow: hidden; border: 1px solid orange; background-color: white; width: 50%; margin:auto;}']
 })
-export class TableComponent { }
+export class XetNghiemChiSoComponent {
+}
