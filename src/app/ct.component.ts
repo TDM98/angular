@@ -25,10 +25,11 @@ import { Component } from "@angular/core";
             <li></li>
             <li></li>
           </ul>
-        <h4 class="description-label1">KẾT LUẬN</h4>
-          <li>VIÊM XOANG HÀM - SÀNG</li>
-          <li>CHƯA THẤY HÌNH ẢNH BẤT THƯỜNG NỘI SỌ TRÊN PHIM</li>
+     
       </div>
+      <h4 class="description-label1">KẾT LUẬN</h4>
+      <li style="font-weight:bold">VIÊM XOANG HÀM - SÀNG end to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</li>
+      <li style="font-weight:bold">CHƯA THẤY HÌNH ẢNH BẤT THƯỜNG NỘI SỌ TRÊN PHIM</li>
       </div>
     `,
     styles: ['main { position: end; padding:20px; overflow: hidden; border: 1px solid orange; background-color: white; width: 50%; margin:auto;}']

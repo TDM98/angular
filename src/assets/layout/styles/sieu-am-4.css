@@ -1,11 +1,13 @@
 
 .description-label {
     color:blue;
+    font-size: 15px;
 }
 
 .description-label1 {
     color:blue;
     text-decoration: underline;
+    font-size: 15px;
 }
 
 .hr-style {
@@ -17,7 +19,6 @@
 
 .body-description-container {
     display: flex;
-    flex-direction: row;
 }
 .body-description {
 

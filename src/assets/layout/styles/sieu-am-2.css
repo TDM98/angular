@@ -20,11 +20,17 @@
     flex-direction: row;
 }
 .body-description {
-
+    text-align: justify;
 }
 
 .body-description-image img {
     height: auto;
     width: 300px;
     padding: 20px;
+    float: right;
+}
+
+p {
+    font-weight: bold;
+    text-align: justify;
 }
