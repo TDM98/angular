@@ -4,7 +4,7 @@ import { Component } from "@angular/core";
   selector: "app-xet-nghiem-chi-so",
   template: `
       <div class="main">
-      <app-header></app-header>
+      <app-header1></app-header1>
       <link rel="stylesheet" href="../assets//layout/styles/xet-nghiem-chi-so-table.css">
       <div class="table-container">
     <table class="table" border="1" style="border-collapse: collapse;">

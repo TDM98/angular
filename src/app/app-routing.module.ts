@@ -12,8 +12,10 @@ import { NoiSoi6Component } from './noi-soi-6-hinh.component';
 import { NoiSoi2Component } from './noi-soi-2-hinh.component';
 import { XetNghiemCDHAComponent } from './xet-nghiem-cdha.component';
 import { XetNghiemChiSoComponent } from './xet-nghiem-chi-so.component';
+import { AuthComponent } from './auth/auth.component';
 
 const routes: Routes = [
+  {path:'auth', component: AuthComponent},
   {path:'', component:HomeComponent},
   {path:'doppler', component: DopplerComponent},
   {path:'sieu-am-2-hinh', component: SieuAm2Component},
@@ -25,6 +27,7 @@ const routes: Routes = [
   {path:'noi-soi-2-hinh', component: NoiSoi2Component},
   {path:'xet-nghiem-cdha', component: XetNghiemCDHAComponent},
   {path:'xet-nghiem-chi-so', component: XetNghiemChiSoComponent},
+
 ];
 
 @NgModule({

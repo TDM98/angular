@@ -17,6 +17,9 @@ import { NoiSoi6Component } from './noi-soi-6-hinh.component';
 import { NoiSoi2Component } from './noi-soi-2-hinh.component';
 import { XetNghiemCDHAComponent } from './xet-nghiem-cdha.component';
 import { XetNghiemChiSoComponent } from './xet-nghiem-chi-so.component';
+import { Header1Component } from './header1.component';
+import { FooterComponent } from './footer-component';
+import { AuthComponent } from './auth/auth.component';
 
 
 @NgModule({
@@ -34,7 +37,10 @@ import { XetNghiemChiSoComponent } from './xet-nghiem-chi-so.component';
     NoiSoi6Component,
     NoiSoi2Component,
     XetNghiemCDHAComponent,
-    XetNghiemChiSoComponent
+    XetNghiemChiSoComponent,
+    Header1Component,
+    FooterComponent,
+    AuthComponent,
   ],
 
   imports: [

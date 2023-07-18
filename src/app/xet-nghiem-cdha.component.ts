@@ -4,7 +4,7 @@ import { Component } from "@angular/core";
   selector: "app-xet-nghiem-cdha",
   template: `
       <div class="main">
-      <app-header></app-header>
+      <app-header1></app-header1>
       <link rel="stylesheet" href="../assets//layout/styles/xet-nghiem-cdha.css">
       <div class="body-description">
         <h4 class="description-label1">Kỹ thuật</h4>
