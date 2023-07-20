@@ -1,43 +1,159 @@
-<!-- app/app.component.html-->
-<div class="container">
-    <nav>
-    <nav class="navbar navbar-expand  navbar-dark bg-dark">
-    <ul class="navbar-nav">
-    <li class="nav-item"><a class="nav-link" href="#">Trang chủ</a> </li>
-    <li class="nav-item"><a class="nav-link" href="#" routerLink="doppler">Xét nghiêm Doppler</a> </li>
-    <li class="nav-item"><a class="nav-link" href="#" routerLink="sieu-am-2-hinh">Siêu âm 2 hình</a> </li>
-    <li class="nav-item"><a class="nav-link" href="#" routerLink="sieu-am-4-hinh">Siêu âm 4 hình</a> </li>
-    <li class="nav-item"><a class="nav-link" href="#" routerLink="ct">CT</a> </li>
-    <li class="nav-item"><a class="nav-link" href="#" routerLink="mri">MRI</a> </li>
-    <li class="nav-item"><a class="nav-link" href="#" routerLink="tham-do-chuc-nang">Thăm dò chức năng</a> </li>
-    <li class="nav-item"><a class="nav-link" href="#" routerLink="noi-soi-6-hinh">Nội soi 6 hình</a> </li>
-    <li class="nav-item"><a class="nav-link" href="#" routerLink="noi-soi-2-hinh">Nội soi 2 hình</a> </li>
-    <li class="nav-item"><a class="nav-link" href="#" routerLink="xet-nghiem-cdha">Xét nghiệm CĐHA</a> </li>
-    <li class="nav-item"><a class="nav-link" href="#" routerLink="xet-nghiem-chi-so">Xét nghiệm chỉ số</a> </li>
-    </ul>
-    </nav>
-    </nav>
-    <main class="d-flex" style="
-      width: 21cm;
-  height: auto;
-    position: end;
-    padding:20px;
-    overflow: hidden;
-    border: 1px solid orange;
-    background-color: white;
-    margin: auto;">
-      <article class="col-md-12 bg-light"> 
-          <router-outlet></router-outlet>
-      </article>
-
-    </main>
-
+<div class="header-bar">
+<mat-toolbar class="mat-elevation-z8">
+  <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
+    <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
+    <mat-icon *ngIf="sidenav.opened"> close </mat-icon>
+  </button>
+  <img src="https://i.ibb.co/ctvJ4Jn/tvmlogo2.png" width="40" height="40" alt="img" style="margin-right: 10px;">
+  Kết quả hình ảnh
+  <div class="top-header">
+    <button class="top-header-button" [routerLink]="'not-found'">
+      <i class="pi pi-cog" style="font-size: 1.5rem" [routerLink]="'not-found'"></i>
+  </button>
   </div>
-  <div class="footer" style="
-width: 100%;
-min-height: 5%;
-position: absolute;
-color: white;
-font-weight: bold;
-font-family: 'Times New Roman', Times, serif;
-  "><app-footer></app-footer></div>
+</mat-toolbar>
+</div>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
+    <h4 class="name">Trần Đức Minh</h4>
+    <p class="designation">Nhân viên Test</p>
+
+    <mat-divider></mat-divider>
+
+    <button mat-button class="menu-button" routerLink="">
+      <mat-icon>home</mat-icon>
+      <span>Trang chủ</span>
+    </button>
+    <button mat-button class="menu-button" routerLink="ct">
+      <mat-icon>person</mat-icon>
+      <span>CT</span>
+    </button>
+    <button mat-button class="menu-button" routerLink="doppler">
+      <mat-icon>person</mat-icon>
+      <span>Doppler</span>
+    </button>
+    <button mat-button class="menu-button" routerLink="mri">
+      <mat-icon>person</mat-icon>
+      <span>MRI</span>
+    </button>
+    <button mat-button class="menu-button" routerLink="noi-soi-2-hinh">
+      <mat-icon>person</mat-icon>
+      <span>Nội soi 2 hình</span>
+    </button>
+    <button mat-button class="menu-button" routerLink="noi-soi-6-hinh">
+      <mat-icon>person</mat-icon>
+      <span>Nội soi 6 hình</span>
+    </button>
+    <button mat-button class="menu-button" routerLink="sieu-am-2-hinh">
+      <mat-icon>person</mat-icon>
+      <span>Siêu âm 2 hình</span>
+    </button>
+    <button mat-button class="menu-button" routerLink="sieu-am-4-hinh">
+      <mat-icon>person</mat-icon>
+      <span>Siêu âm 4 hình</span>
+    </button>
+    <button mat-button class="menu-button" routerLink="tham-do-chuc-nang">
+
+      <span>Thăm dò chức năng</span>
+    </button>
+    <button mat-button class="menu-button" routerLink="xet-nghiem-cdha">
+      <span>Xét nghiệm CDHA</span>
+    </button>
+
+    <button mat-button class="menu-button" routerLink="xet-nghiem-chi-so">
+      <span>Xét nghiệm chỉ số</span>
+    </button>
+
+    <mat-divider></mat-divider>
+
+    <button mat-button class="menu-button" routerLink="/help">
+      <mat-icon>exit_to_app</mat-icon>
+      <span>Đăng xuất</span>
+    </button>
+
+    <mat-divider></mat-divider>
+
+    <button mat-button class="menu-button" routerLink="test">
+      <mat-icon>loop</mat-icon>
+      <span>Test</span>
+    </button>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="content mat-elevation-z8">
+      <!-- report-header -->
+
+      <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap" rel="stylesheet">
+      <div class="header">
+        <div class="app-header">
+          <h3 class="title">SỞ Y TẾ TỈNH BẠC LIÊU</h3>  
+          <h3 class="title1">BỆNH VIỆN ĐA KHOA THANH VŨ MEDIC BẠC LIÊU</h3>
+          <h3 class="title">Số 02DN, Đường Tránh Quốc Lộ 1A, Khóm 1, Phường 7, TP Bạc Liêu</h3>
+          </div>
+
+          <div class="header-right">
+          <img src="../assets/layout/images/logo.png" alt="Img" width="180px" height="50px">
+            <button class="noselect">B20003631</button>
+          </div>
+       
+
+      </div>
+
+      <div class="body-result">
+      <h2 class="body-header">PHIẾU KẾT QUẢ HÌNH ẢNH</h2>
+
+      <div class ="line1">
+        <p>Bệnh nhân: Nguyễn Văn A</p>
+        <p>Tuổi: 50</p>
+        <p>Giới tính: Nam</p>
+      </div>
+      
+      <div class ="line2">
+        <p>Địa chỉ: 95 TRAN QUANG KHAI STREET, DISTRICT 1</p>
+      </div>
+
+      <div class ="line3">
+        <p>BS chỉ định: Nguyễn Văn B</p>
+        <p>Nơi gửi: 95 TRAN QUANG KHAI STREET, DISTRICT 1</p>
+      </div>
+
+      <div class="line4">
+        <p>Ngày chỉ định: 7/5/2023 9:05:39 am</p>
+        <p>Ngày thực hiện: 10/5/2023 11:23:32 am</p>
+      </div>
+
+      <div class="line5">
+        <p>Chẩn đoán: </p>
+      </div>
+
+      <div class="line6">
+        <p>Nội dung: Siêu âm cơ phần mềm vùng cổ mặt</p>
+      </div>
+      </div>
+      <hr class="hr-style">
+      <!-- report-header -->
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+<!-- <link rel="stylesheet" href="../assets//layout/styles/footer.css"> -->
+<!-- Remove the container if you want to extend the Footer to full width. -->
+
+<!-- Footer -->
+<footer class="text-center text-lg-start text-dark" style="background-color: #EEE9DD ">
+<!-- Grid container -->
+  <!-- Copyright -->
+  <div
+       class="text-center p-3 text-white"
+       style="background-color: #CD9A25 "
+       >
+    © 2023 Copyright: Bản quyền thuộc về
+    <a class="text-white" href="https://benhvienthanhvubaclieu.com/"
+       >benhvienthanhvubaclieu.com</a
+      >
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+<!-- End of .container -->

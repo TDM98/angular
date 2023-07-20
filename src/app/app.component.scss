@@ -1,0 +1,258 @@
+@import '~primeicons/primeicons.css';
+header-bar {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+mat-toolbar {
+  background: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  font-weight: 500;
+}
+
+.top-header {
+ 
+    margin: 0 0 0 auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+
+    .top-header-button {
+        margin-left: 1rem;
+        border-width: 0;
+        border-radius: 50%;
+        font-size: 50px;
+    }
+}
+
+mat-sidenav {
+
+  width: 250px;
+  border-right: none;
+  background: linear-gradient(to right, #434343 0%, black 100%);
+  
+ 
+  padding: 16px;
+  text-align: center;
+}
+
+.content {
+  height: calc(100vh - 130px);
+  border-radius: 10px;
+  margin: 16px;
+  margin-left: 32px;
+  margin-top: 40px;
+  padding: 16px;
+  overflow: auto;
+}
+
+mat-sidenav-container {
+  height: calc(100vh - 65px);
+}
+
+.menu-button {
+  width: 100%;
+  display: flex;
+  color: lightgrey;
+  
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1rem;
+
+  mat-icon {
+    margin-right: 8px;
+    color: white;
+  }
+  span {
+    color: white;
+    font-weight: 200;
+  }
+}
+
+.avatar {
+  margin-top: 16px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.name {
+  margin-top: 8px;
+  font-weight: normal;
+  color: white;
+}
+
+.designation {
+  margin-top: 2px;
+  font-size: 0.7rem;
+  color: lightgrey;
+}
+
+mat-divider {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+// header
+.title {
+  color: orange;
+font-size: 15px;
+padding: 10px;
+}
+
+.title1 {
+  color: red;
+font-size: 15px;
+}
+
+.header {
+  display: flex;
+justify-content: space-between;
+}
+.app-header {
+  position: end;
+  max-width: 1000px;
+  border-radius: 6px;
+  overflow: hidden;
+border: 1px solid orange;
+  text-align: center;
+}
+
+.header-right {
+display: flex;
+flex-direction: column;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+height: 100vh;
+overflow: hidden;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #f9ea8f;
+background-image: linear-gradient(315deg, #f9ea8f 0%, #aff1da 74%);
+}
+
+.noselect {
+-webkit-touch-callout: none;
+  -webkit-user-select: none;
+   -khtml-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+cursor: pointer;
+font-family: 'Libre Barcode 39 Text', cursive;
+font-size: 40px;
+background: none;
+border: none;
+}
+
+button:before {
+content: '';
+position: absolute;
+width: 180px;
+height: 5px;
+transform: translateX(-3px) translateY(-5px);
+background: rgba(255,0,0,0.0);
+transition: 500ms;
+}
+
+button:hover:before {
+animation: line 500ms forwards;
+}
+
+button:hover {
+animation: blink 500ms 300ms;
+}
+
+@keyframes line {
+from { background: rgba(255,0,0,0.8);}
+to {
+  background: rgba(255,0,0,0.8);
+  transform: translateX(-3px) translateY(50px);
+}
+}
+
+@keyframes blink {
+from {color: #eee;}
+to {color: black;}
+}
+
+button:focus {
+outline: none;
+}
+.body-result {
+margin-top: 40px;
+margin-bottom: 50px;
+}
+.body-header {
+  color: blue;
+  text-align: center;
+font-size: 25px;
+}
+p {
+  margin-right: 20px;
+}
+
+.line1 {
+  display: flex;
+  justify-content: space-between;
+margin-top: 10px;
+}
+p {
+  margin-right: 50px;
+}
+
+
+.line2 {
+margin-top: 10px;
+}
+
+.line3 {
+  display: flex;
+  justify-content: space-between;
+margin-top: 10px;
+}
+
+.line4 {
+  display: flex;
+  justify-content: space-between;
+margin-top: 10px;
+}
+
+.line5 {
+margin-top: 10px;
+}
+
+.line6 {
+  display: flex;
+  justify-content: space-between;
+margin-top: 10px;
+font-weight: 400;
+}
+
+.description-label {
+  color:blue;
+}
+
+.description-label1 {
+  color:blue;
+  text-decoration: underline;
+}
+
+.hr-style {
+  height: 2px;
+  border-width: 0;
+  color:black;
+  background-color: black;
+}
