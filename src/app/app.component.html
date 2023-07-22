@@ -6,10 +6,15 @@
   </button>
   <img src="https://i.ibb.co/ctvJ4Jn/tvmlogo2.png" width="40" height="40" alt="img" style="margin-right: 10px;">
   Kết quả hình ảnh
+
   <div class="top-header">
-    <button class="top-header-button" [routerLink]="'not-found'">
+    <div class="search-box">
+      <button class="btn-search"><i class="fas fa-search"></i></button>
+      <input type="text" class="input-search" placeholder="...">
+    </div>
+    <!-- <button class="top-header-button" [routerLink]="'not-found'">
       <i class="pi pi-cog" style="font-size: 1.5rem" [routerLink]="'not-found'"></i>
-  </button>
+  </button> -->
   </div>
 </mat-toolbar>
 </div>
@@ -78,7 +83,38 @@
       <span>Test</span>
     </button>
   </mat-sidenav>
+
+
   <mat-sidenav-content>
+    
+    <div class="sa">
+      
+      <div class="csv">
+      <button class="csv">
+        <input type="file" #fileInput/>
+        <img src="https://i.ibb.co/j6vMQcq/csv-1.png" style="height: auto ; width: 20px;" >
+        Nhập CSV
+      </button>
+      <button class="csv">
+        <img src="https://i.ibb.co/j6vMQcq/csv-1.png" style="height: auto ; width: 20px;">
+        Xuất CSV
+        <img src="https://i.ibb.co/5xvnyfv/download.png" style="height: auto ; width: 20px;">
+      </button>
+    </div>
+
+    <div class="pdf">
+      <button class="pdf">
+        <img src="https://i.ibb.co/n7L1Bcf/pdf.png" style="height: auto ; width: 20px;">
+        Nhập PDF
+      </button>
+
+      <button class="pdf">
+        <img src="https://i.ibb.co/n7L1Bcf/pdf.png" style="height: auto ; width: 20px;">
+        Xuất PDF
+        <img src="https://i.ibb.co/5xvnyfv/download.png" style="height: auto ; width: 20px;">
+      </button>
+    </div>
+    </div>
     <div class="content mat-elevation-z8">
       <!-- report-header -->
 
@@ -94,8 +130,6 @@
           <img src="../assets/layout/images/logo.png" alt="Img" width="180px" height="50px">
             <button class="noselect">B20003631</button>
           </div>
-       
-
       </div>
 
       <div class="body-result">
@@ -134,6 +168,7 @@
       <router-outlet></router-outlet>
     </div>
   </mat-sidenav-content>
+
 </mat-sidenav-container>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 <!-- <link rel="stylesheet" href="../assets//layout/styles/footer.css"> -->
