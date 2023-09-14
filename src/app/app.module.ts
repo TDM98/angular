@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,7 +12,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { HomeComponent } from './home.component';
 import { DopplerComponent } from './xet-nghiem/doppler/doppler.component';
-import { NotfoundComponent } from './errors/notfound/notfound.component';
+import { NotfoundComponent } from './errors/notfound-page/notfound.component';
 import { CtComponent } from './xet-nghiem/ct/ct.component';
 import { MriComponent } from './xet-nghiem/mri/mri.component';
 import { Noisoi2hinhComponent } from './xet-nghiem/noisoi2hinh/noisoi2hinh.component';
@@ -22,6 +23,8 @@ import { ThamdochucnangComponent } from './xet-nghiem/thamdochucnang/thamdochucn
 import { XetnghiemcdhaComponent } from './xet-nghiem/xetnghiemcdha/xetnghiemcdha.component';
 import { XetnghiemchisoComponent } from './xet-nghiem/xetnghiemchiso/xetnghiemchiso.component';
 import { ReportHeaderComponent } from './template/report-header/report-header.component';
+import { NotfoundItemComponent } from './errors/notfound-item/notfound-item.component';
+import { FileUploadComponent } from './components/file-upload/file-upload.component';
 
 
 
@@ -41,6 +44,8 @@ import { ReportHeaderComponent } from './template/report-header/report-header.co
     XetnghiemcdhaComponent,
     XetnghiemchisoComponent,
     ReportHeaderComponent,
+    NotfoundItemComponent,
+    FileUploadComponent,
   ],
   imports: [
     BrowserModule,
@@ -51,6 +56,7 @@ import { ReportHeaderComponent } from './template/report-header/report-header.co
     MatButtonModule,
     MatIconModule,
     MatDividerModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],

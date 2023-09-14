@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthComponent } from './auth/auth.component';
-import { NotfoundComponent } from './errors/notfound/notfound.component';
+import { NotfoundComponent } from './errors/notfound-page/notfound.component';
 import { HomeComponent } from './home.component';
 import { DopplerComponent } from './xet-nghiem/doppler/doppler.component';
 import { Sieuam2Component } from './xet-nghiem/sieuam2/sieuam2.component';

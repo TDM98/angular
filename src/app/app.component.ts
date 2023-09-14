@@ -12,6 +12,8 @@ import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+
+  
   @ViewChild(MatSidenav)
   sidenav!: MatSidenav;
 
@@ -42,4 +44,11 @@ export class AppComponent {
         }
       });
   }
+
+
+  //   private selectedFile: File;
+  // onFileSelect(event) {
+  //   this.selectedFile = event.target.files[0];
+  //   console.log(this.selectedFile.name);
+  // }
 }

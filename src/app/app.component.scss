@@ -261,7 +261,7 @@ body{
   outline: none;
   border-radius: 25px;
   transition: all .5s ease-in-out;
-  background-color: tomato;
+  background-color: orange;
   padding-right: 40px;
 }
 .input-search::placeholder{
@@ -282,7 +282,7 @@ body{
   position: absolute;
   right: 0px;
   color:#ffffff ;
-  background-color:tomato;
+  background-color:orange;
   pointer-events: painted;  
 }
 .btn-search:focus ~ .input-search{
@@ -291,7 +291,7 @@ body{
   background-color: transparent;
   border:1px solid rgba(255,255,255,.5);
   transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
-  border-color: tomato;
+  border-color: orange;
 }
 .input-search:focus{
   width: 400px;
@@ -299,5 +299,19 @@ body{
   background-color: transparent;
   border  :1px solid rgba(255,255,255,.5);
   transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
-  border-color: tomato;
+  border-color: orange;
+}
+
+.pdf-style {
+    height: calc(150vh - 130px);
+    border-radius: 10px;
+    margin: 16px;
+    margin-left: 32px;
+    padding: 16px;
+    overflow: auto;
+}
+
+h1 {
+  color: orange;
+  text-align: center;
 }
